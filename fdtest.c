@@ -2,7 +2,7 @@
 #include <io.h>
 
 int main() {
-  _close(stdout);
+  _close(_fileno(stdout));
   int fd = _fileno(stdout);
   fprintf(stderr, "fd res: %d, errno: %d", fd, errno);
   return 0;
