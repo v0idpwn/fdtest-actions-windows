@@ -20,5 +20,5 @@ jobs:
       run: cmake --build ${{github.workspace}}/build
 
     - name: Run
-      run: ${{github.workspace}}/build/FdTest
+      run: ${{github.workspace}}/build/Debug/FdTest.exe
 
