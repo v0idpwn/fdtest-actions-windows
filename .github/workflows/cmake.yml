@@ -19,3 +19,6 @@ jobs:
     - name: Build
       run: cmake --build ${{github.workspace}}/build
 
+    - name: Run
+      run: ${{github.workspace}}/build/FdTest
+
